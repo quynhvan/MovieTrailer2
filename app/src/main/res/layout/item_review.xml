@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/content_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/background_viewpager"
+      >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_reviewer"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="@dimen/dp_10" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/content_review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@id/iv_reviewer"
+            android:layout_marginLeft="20dp"
+           >
+            <TextView
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:id="@+id/tv_title_review_by"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColor"
+                android:text="Review by"/>
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="@color/textColor"
+                app:layout_constraintLeft_toRightOf="@id/tv_title_review_by"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"/>
+<!--            <RatingBar-->
+<!--                android:id="@+id/rating_bar"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="20dp"-->
+<!--                app:layout_constraintLeft_toRightOf="@id/tv_name"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:numStars="5"-->
+<!--                android:progressTint="@color/color_selected_bottom_nav"-->
+<!--                style="?android:attr/ratingBarStyleSmall"-->
+<!--                android:theme="@style/RatingBar"-->
+<!--                android:isIndicator="false"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                android:rating="2.5"/>-->
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="20dp"
+
+                android:text="The movie is so good"
+                android:textColor="@color/textColor"
+                app:layout_constraintTop_toBottomOf="@id/tv_title_review_by"
+                android:layout_marginTop="5dp"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

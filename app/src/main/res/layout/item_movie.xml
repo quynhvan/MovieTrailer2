@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="10dp"
+    android:paddingRight="5dp">
+
+    <ImageView
+        android:id="@+id/iv_poster_movie"
+        android:layout_width="130dp"
+        android:layout_height='150dp'
+        android:layout_marginTop="@dimen/dp_10"
+        android:scaleType="centerCrop"
+
+        />
+
+    <RelativeLayout
+        android:id="@+id/tv_information"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_poster_movie"
+        android:background="@android:color/white"
+        android:paddingLeft="5dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/tv_title_movie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title_movie"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="@dimen/dp_10"
+           />
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="140dp"
+            android:background="@drawable/circle_view"
+            android:indeterminateOnly="false"
+            android:progress="60"
+            android:max="200"
+            android:progressDrawable="@drawable/circle"
+            app:layout_constraintTop_toTopOf="parent">
+        </ProgressBar>
+
+        <TextView
+            android:id="@+id/tv_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="60%"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@id/progress_bar"
+            app:layout_constraintLeft_toLeftOf="@id/progress_bar"
+            app:layout_constraintRight_toRightOf="@id/progress_bar"
+            app:layout_constraintTop_toTopOf="@id/progress_bar" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--    <ImageView-->
+<!--        android:id="@+id/iv_favorite"-->
+<!--        android:layout_width="25dp"-->
+<!--        android:layout_height="25dp"-->
+<!--        android:layout_alignRight="@id/iv_poster_movie"-->
+<!--        android:layout_marginTop="12dp"-->
+<!--        android:layout_marginRight="3dp"-->
+<!--        android:src="@drawable/ic_love_white" />-->
+
+</RelativeLayout>

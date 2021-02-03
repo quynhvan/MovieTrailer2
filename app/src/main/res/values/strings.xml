@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">MovieTrailer</string>
+    <string name="action_movie">Movies</string>
+    <string name="action_show">Shows</string>
+    <string name="action_watchlist">WatchList</string>
+    <string name="action_favorite">Favorite</string>
+    <string name="title_movie">Fast and Furious Present: Hobb..</string>
+    <string name="director">Director:</string>
+    <string name="Release">Release: </string>
+    <string name="Rating">Rating: </string>
+    <string name="Genres">Genres: </string>
+    <string name="runtime">Runtime: </string>
+    <string name="popular">Popular</string>
+    <string name="toprate">Top Rate</string>
+    <string name="nowplaying">Now Playing</string>
+    <string name="upcoming">Up Coming</string>
+    <string name="ontheair">On The Air</string>
+    <string name="showairing">Show Airing</string>
+    <string name="player_error">Error initializing YouTube player: %s</string>
+    <string name="seek_to">Jump To</string>
+    <string name="seek_to_hint">Seconds</string>
+    <string name="action_title_toolbar_movie_detail">movie</string>
+    <string name="toolbal_favorite">toolbal_favorite</string>
+    <string name="toolbar_delete">toolbar_delete</string>
+    <string name="toolbar_share">toolbar_share</string>
+    <string name="warning">Do you want to delete all list?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="value_null">Null</string>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_movie"
+        android:icon="@drawable/ic_movie"
+        android:title="@string/action_movie"
+        >
+
+    </item>
+    <item
+        android:id="@+id/action_show"
+        android:icon="@drawable/ic_show"
+        android:title="@string/action_show">
+
+    </item>
+<!--    <item-->
+<!--        android:id="@+id/action_watchtlist"-->
+<!--        android:icon="@drawable/ic_watchlist"-->
+<!--        android:title="@string/action_watchlist">-->
+
+<!--    </item>-->
+    <item
+        android:id="@+id/action_favorite"
+        android:icon="@drawable/ic_favorite"
+        android:title="@string/action_favorite">
+    </item>
+</menu>
